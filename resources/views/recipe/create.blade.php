@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="container">
+	<div class="container" style="max-width: 500px;">
 		<a href="/dashboard">Back</a>
 		<hr>
 		<form method="POST" action="/recipes">

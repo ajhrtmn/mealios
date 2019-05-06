@@ -16,7 +16,7 @@ class CreateWeeksTable extends Migration
         Schema::create('weeks', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('owner_id');
-            $table->date('start_date');
+            $table->json('start_date');
             $table->timestamps();
 
             $table->foreign('owner_id')->references('id')->on('users');

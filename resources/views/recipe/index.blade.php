@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container" style="max-width: 500px;">
 	<a href="/dashboard">Back</a>
 	<ul style="margin-top: 1.5rem;">
 		@foreach ($recipes as $recipe)

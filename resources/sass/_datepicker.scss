@@ -1,0 +1,125 @@
+.ui-widget-content {
+border: 0px;
+background-color: $white;
+font-family: $font-family-sans-serif;
+}
+
+.ui-widget {
+border: 0px;
+background-color: $white;
+font-family: $font-family-sans-serif;
+}
+
+.ui-widget.ui-widget-content {
+	border: 0px solid #c5c5c5;
+	font-family: $font-family-sans-serif;
+}
+
+.ui-datepicker {
+	width: 380px;
+	height: 380px;
+	margin: 5px auto;
+	font-family: $font-family-sans-serif;
+}
+
+.ui-datepicker table {
+	width: 100%;
+	font-family: $font-family-sans-serif;
+}
+
+.ui-datepicker-header {
+	background: $white;
+	color: $char;
+	font-family: $font-family-sans-serif;
+}
+
+.ui-widget-header {
+	border: 0px solid #dddddd;
+	font-family: $font-family-sans-serif;
+}
+
+.ui-datepicker-title {
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: $font-family-sans-serif;
+
+}
+
+.ui-datepicker-prev {
+	float: left;
+	cursor: pointer;
+	background-position: center -30px;
+}
+
+.ui-datepicker-next {
+	float: right;
+	cursor: pointer;
+	background-position: center 0px;
+}
+
+.ui-datepicker thead {
+	background-color: $white;
+}
+
+.ui-datepicker th {
+	background-color:$white;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1rem;
+	color: $char;
+}
+
+.ui-datepicker tbody td {
+	padding: 0;
+}
+
+	.ui-datepicker tbody td:last-child {
+		border-right: 0px;
+	}
+
+.ui-datepicker tbody tr {
+	border-bottom: 0px solid #bbb;
+}
+
+	.ui-datepicker tbody tr:last-child {
+		border-bottom: 0px;
+	}
+
+.ui-datepicker a {
+	text-decoration: none;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+	display: inline-block;
+	text-align: center;
+	width: 52px;
+	height: 50px;
+	line-height: 50px;
+	color: $char;
+	margin-bottom: 2px;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+	  background: darken($white, 3%);
+	  color:$char;
+	  height:50px;
+	  width:52px;
+
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+	background: darken($white, 15%);
+	color: $char;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+	background: $olive;
+	color: $white;
+	border: 1px solid $ash;
+	position: relative;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+	background: #D6E4BE;
+	color: #000;
+}

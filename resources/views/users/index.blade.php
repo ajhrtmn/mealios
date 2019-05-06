@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div style="max-width: 500px;">
+<div class="container" style="max-width: 500px;">
 	<div id="todays-meal">
 		<h2> Today's Menu:</h2>
 		<hr>

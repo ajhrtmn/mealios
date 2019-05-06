@@ -10,6 +10,10 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// JQuery UI
+@import '~jquery-ui/themes/base/all.css';
+@import 'datepicker';
+
 // Import Main Styles
 @import 'appStyle';
 
@@ -18,3 +22,6 @@
 
 //Import Recipe Styles
 @import 'recipesCreate';
+
+//Import Day Styles
+@import 'daysCreate';

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Week;
+use App\Recipe;
 use Illuminate\Http\Request;
+use App\Http\Controllers\DayController;
 
 class WeekController extends Controller
 {
@@ -14,7 +16,11 @@ class WeekController extends Controller
      */
     public function index()
     {
-        //
+        // Get Users Recipes
+        $weeks = Week::where('owner_id', auth()->id())->get();
+
+
+        return view('week.index', compact('weeks'));
     }
 
     /**
@@ -24,7 +30,8 @@ class WeekController extends Controller
      */
     public function create()
     {
-        //
+        $recipes = Recipe::where('owner_id', auth()->id())->get();
+        return view('week.create', compact('recipes'));
     }
 
     /**
@@ -35,7 +42,14 @@ class WeekController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $week = new Week;
+        $week->owner_id = auth()->id();
+        $week->start_date = json_encode($request['start_date']);
+        $week->save();
+
+        $recipes = Recipe::where('owner_id', auth()->id())->get();
+
+        return view('day.create', compact('week', 'recipes'));
     }
 
     /**

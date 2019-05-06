@@ -6,6 +6,21 @@
 
 require('./bootstrap');
 
+import $ from 'jquery';
+window.$ = window.jQuery = $;
+
+import 'jquery-ui/ui/widgets/datepicker.js';
+
+$( function() {
+	$( "#datepicker" ).datepicker().ready(function() {
+		var date = $( "#datepicker" ).datepicker( "getDate" );
+		$('#start_date').val( date );
+	}).change(function() {
+		var date = $( "#datepicker" ).datepicker( "getDate" );
+		$('#start_date').val( date );
+	});
+} );
+
 window.Vue = require('vue');
 
 /**

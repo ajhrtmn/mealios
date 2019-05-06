@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container" style="max-width: 500px;">
 	<a href="/recipes">Back</a>
 	<h3 style="margin-top: 1.5rem;">{{ $recipe->name }}</h3>
 	<ul class="ul-clean">
