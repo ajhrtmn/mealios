@@ -12638,6 +12638,31 @@ html {
   background-color: #f4f2f1;
 }
 
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  float: none;
+  margin-left: -6rem;
+}
+
+.dropdown-menu {
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 0.9rem;
+  color: #2a2622;
+  text-align: left;
+  list-style: none;
+  background-color: #e9e8e2;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
 .navbar-laravel {
   background-color: #669933;
   color: #e9e8e2;
@@ -12666,6 +12691,14 @@ html {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
+}
+
+#app .nav-settings-menu {
+  color: #2a2622;
+}
+
+#app .nav-settings-menu a {
+  color: #2a2622;
 }
 
 #app header {

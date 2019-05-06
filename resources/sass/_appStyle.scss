@@ -10,6 +10,31 @@ body, html {
 
 }
 
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  float: none;
+  margin-left: -6rem;
+}
+
+.dropdown-menu {
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 0.9rem;
+  color: $char;
+  text-align: left;
+  list-style: none;
+  background-color: $ash;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
 .navbar-laravel {
 
 	background-color: $olive;
@@ -42,6 +67,13 @@ body, html {
 	justify-content: space-between;
 
 	min-height: 100%;
+
+	.nav-settings-menu {
+		color: $char;
+		a {
+			color: $char;
+		}
+	}
 
 
 	header {

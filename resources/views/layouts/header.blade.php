@@ -5,11 +5,11 @@
 				{{-- {{ config('app.name', 'Laravel') }} --}}
 		</a>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="navbar" id="navbarSupportedContent">
 			<!-- Left Side Of Navbar -->
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a>
+					{{-- <a class="nav-link" href="{{ route('dashboard') }}">Dashboard</a> --}}
 				</li>
 			</ul>
 
@@ -26,13 +26,15 @@
 						</li>
 					@endif
 				@else
-					<li class="nav-item dropdown">
-						<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-							{{ Auth::user()->name }} <span class="caret"></span>
-						</a>
 
-						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="{{ route('logout') }}"
+				<div class="btn-group nav-settings-menu">
+					<button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    <i class="material-icons text-color-ash">settings</i>
+					</button>
+					<div class="dropdown-menu dropdown-menu-right nav-settings-menu">
+				    	<button class="dropdown-item nav-settings-menu" type="button">
+
+				    		<a class="nav-settings-menu" href="{{ route('logout') }}"
 							   onclick="event.preventDefault();
 											 document.getElementById('logout-form').submit();">
 								{{ __('Logout') }}
@@ -41,8 +43,10 @@
 							<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
 								@csrf
 							</form>
-						</div>
-					</li>
+
+				    	</button>
+					</div>
+				</div>
 				@endguest
 			</ul>
 		</div>
