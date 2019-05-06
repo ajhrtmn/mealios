@@ -1,0 +1,48 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$logo-font: 'Arvo', serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+
+// User Colors
+$white: hsla(30, 10%, 95%, 1);
+$crimson: hsl(355, 77, 52);
+$ash: hsl(49, 13, 90);
+$char: hsl(30, 10, 15);
+$ember: hsl(20, 75, 50);
+$welldone: hsla(15, 20%, 15%, 1);
+$mediumwell: hsla(15, 15%, 75%, 1);
+$dijon: hsla(45, 55%, 55%, 1);
+$olive: hsla(90, 50%, 40%, 1);
+$keylime: hsla(90, 25%, 75%, 1);
+
+// Sets % of shade change for Color Picker helper classes
+$lighten-by: 10%;
+$darken-by: 10%;
+
+// Must add color to list in order to access it
+// with the Color Picker helper classes
+$colors: (
+
+ash: $ash,
+char: $char,
+crimson: $crimson,
+ember: $ember
+
+);

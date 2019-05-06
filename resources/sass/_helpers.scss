@@ -1,0 +1,95 @@
+
+
+// Mixin Functions for Color Picker
+// Color list and Shade values stored in _variables.scss
+
+@mixin color-picker($attribute) {
+	@each $color_set, $color in $colors {
+		&-#{$color_set} {
+			#{$attribute}: $color;
+		}
+		&-#{$color_set}-light {
+			#{$attribute}: lighten($color, $lighten-by);
+		}
+		&-#{$color_set}-dark {
+			#{$attribute}: darken($color, $darken-by);
+		}
+	}
+}
+
+@mixin color-picker-a($attribute) {
+	@each $color_set, $color in $colors {
+		&-#{$color_set} {
+			a{#{$attribute}: $color;}
+			a:hover{#{$attribute}: darken($color, $darken-by);}
+		}
+	}
+}
+
+
+//
+//// Helper Classes
+//
+
+.bg-color {
+
+	@include color-picker($attribute: 'background-color');
+
+}
+
+.link-color {
+
+	@include color-picker-a($attribute: 'color');
+
+}
+
+.text-color {
+
+	@include color-picker($attribute: 'color');
+
+}
+
+.flex-reverse-row {
+
+	display: flex;
+	flex-direction: row-reverse;
+
+}
+
+.flex-reverse-col {
+
+	display: flex;
+	flex-direction: column-reverse;
+
+}
+
+
+//
+//// Utility Classes
+//
+
+// Used by Vue Router to determine active link
+// ** Note: Must use in conjunction with inline <exact>
+//    on <router-link to=''> on main link.
+.active-link {
+
+	font-weight: bold;
+
+}
+
+.text-bold {
+
+	font-weight: bold;
+
+}
+
+.ul-clean {
+
+	list-style: none;
+
+}
+.full-length {
+
+	height: 100vh;
+
+}

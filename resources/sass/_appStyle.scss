@@ -1,0 +1,87 @@
+body, html {
+
+	margin: 0px;
+	padding: 0px;
+
+	height: 100%;
+	width: 100%;
+
+	background-color: $white;
+
+}
+
+.navbar-laravel {
+
+	background-color: $olive;
+	color: $ash;
+
+
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+
+	a {
+		color: $ash;
+	}
+
+	.logo {
+		font-size: 1.25rem;
+		font-family: $logo-font;
+		.outer-logo-color {
+			color: $char;
+			.inner-logo-color {
+				color: $ash;
+			}
+		}
+	}
+
+}
+
+#app {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	min-height: 100%;
+
+
+	header {
+
+		background-color: $olive;
+
+		a {
+			color: $ash;
+		}
+
+	}
+
+	main {
+
+		display: flex;
+		flex-direction: column;
+
+		margin-bottom: auto;
+
+		.dashcard {
+			margin-top: 2em;
+			width: 100%;
+		}
+
+	}
+
+	footer {
+
+		display: flex;
+		align-content: center;
+		justify-content: center;
+
+		background-color: $olive;
+		color: $ash;
+
+		min-height: 5em;
+		min-width: 100%;
+
+		margin: 0px auto;
+
+	}
+
+}

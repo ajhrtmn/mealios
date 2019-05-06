@@ -1,0 +1,95 @@
+#recipe_form_ingredients {
+	width: 100%;
+
+	display: flex;
+
+	.amount {
+		width: 23%;
+	}
+	.measurement {
+		width: 23%;
+		margin: 0px .25rem;
+	}
+	.ingredient_name {
+		width: 47%;
+		margin: 0px 0rem 0rem .25rem;
+	}
+}
+
+.view-week-btn {
+	width: 100%;
+
+	border-bottom: 1px solid $olive;
+
+	.button {
+		background-color: $keylime;
+
+		.icon {
+			color: darken($keylime, 25%);
+		}
+	}
+
+	.button:hover {
+		background-color: darken($keylime, 15%);
+
+		.icon {
+			color: lighten($keylime, 15%);
+		}
+	}
+}
+
+.new-items {
+	width: 95%;
+	margin: 0px auto;
+
+	.button {
+		background-color: $white;
+
+		.icon {
+			color: darken($white, 25%);
+		}
+	}
+
+	.button:hover {
+		background-color: darken($white, 15%);
+
+		.icon {
+			color: darken($white, 50%);
+		}
+	}
+}
+
+.new-items, .view-week-btn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	padding: 0rem 0rem 1rem 0rem;
+
+	.recipe {
+		margin-left: 1rem;
+	}
+
+	.button {
+		width: 95%;
+		padding: 1rem 0em 1rem 1rem;
+		font-size: 1rem;
+		text-align: left;
+
+		.icon {
+			font-size: 1.25rem;
+			padding-right: 1rem;
+			margin: auto;
+		}
+	}
+
+
+	.button:hover {
+		.icon {
+			font-size: 1.25rem;
+			padding-right: 1rem;
+			margin: auto;
+		}
+	}
+}
